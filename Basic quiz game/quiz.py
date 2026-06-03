@@ -63,6 +63,7 @@ while True:
                 incorrect_score+=1
                 print("Incorrect answer!")
                 print()
+                print(f"Your answer: {user_option.upper()}")
                 print(f"Correct answer:{correct_answer}")
                 print(f"Current Score: {user_score}/10")
         print("=========================")
@@ -73,6 +74,8 @@ while True:
         print(f"Incorrect answer: {incorrect_score}")
         print()
         print(f"Final Score:{user_score}/10")
+        percentage=(user_score/10)*100
+        print(f"Percentage: {round(percentage,1)}%git")
         if user_score>=5:
             print("Excellent Work")
         elif user_score==0:
